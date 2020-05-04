@@ -5,4 +5,19 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="CarNames.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="CarNames.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Colorful.Console" Version="1.2.10" />
+    <PackageReference Include="ConsoleTables" Version="2.4.1" />
+  </ItemGroup>
+
 </Project>

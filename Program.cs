@@ -23,6 +23,13 @@
 
         private static void CreateVehicles(Race race)
         {
+            const int numberOfVehicles = 10;
+            for (int i = 0; i < numberOfVehicles; i++)
+            {
+                race.RegisterRacer(new Car());
+                race.RegisterRacer(new Motorcycle());
+                race.RegisterRacer(new Truck());
+            }
 
         }
     }
